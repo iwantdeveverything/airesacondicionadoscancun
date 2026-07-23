@@ -24,16 +24,16 @@ const {
   neighborhoodContext,
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://airesacondicionadoscancun.com');
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://airesacondicionadoscancun.vercel.app');
 
 // Schema.org LocalBusiness JSON-LD
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "HVACBusiness",
   "name": "Aires Acondicionados Cancún",
-  "image": "https://airesacondicionadoscancun.com/og-image.jpg",
-  "@id": "https://airesacondicionadoscancun.com/#organization",
-  "url": "https://airesacondicionadoscancun.com",
+  "image": "https://airesacondicionadoscancun.vercel.app/og-image.jpg",
+  "@id": "https://airesacondicionadoscancun.vercel.app/#organization",
+  "url": "https://airesacondicionadoscancun.vercel.app",
   "telephone": "+529981234567",
   "priceRange": "$$",
   "address": {
@@ -85,7 +85,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Inicio",
-      "item": "https://airesacondicionadoscancun.com/"
+      "item": "https://airesacondicionadoscancun.vercel.app/"
     },
     ...(currentPage.id !== 'index' ? [{
       "@type": "ListItem",
@@ -105,6 +105,7 @@ const breadcrumbSchema = {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />

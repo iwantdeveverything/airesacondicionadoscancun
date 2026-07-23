@@ -13,6 +13,7 @@
     "test": "node --experimental-strip-types --test src/utils/*.test.ts"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "@astrojs/vercel": "^8.1.0",
     "astro": "^5.0.0"
   },
