@@ -1,0 +1,97 @@
+---
+import { getSiloLinks, type SiloPageEntry } from '../utils/siloLinking';
+
+interface Props {
+  currentPage: SiloPageEntry;
+  allPages: SiloPageEntry[];
+}
+
+const { currentPage, allPages } = Astro.props;
+const siloLinks = getSiloLinks(currentPage, allPages);
+---
+
+<nav class="silo-links-wrapper" aria-label="Navegación Interna SILO">
+  {siloLinks.type === 'home' && siloLinks.hubs && siloLinks.hubs.length > 0 ? (
+    <div class="silo-group">
+      <h3>Nuestros Servicios Especializados</h3>
+      <ul class="silo-list">
+        {siloLinks.hubs.map((hub) => (
+          <li>
+            <a href={hub.url}>{hub.text}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ) : null}
+
+  {siloLinks.type === 'hub' && siloLinks.spokes && siloLinks.spokes.length > 0 ? (
+    <div class="silo-group">
+      <h3>Cobertura por Zonas</h3>
+      <ul class="silo-list">
+        {siloLinks.spokes.map((spoke) => (
+          <li>
+            <a href={spoke.url}>{spoke.text}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ) : null}
+
+  {siloLinks.type === 'spoke' ? (
+    <div class="silo-group">
+      <h3>Navegación Relacionada</h3>
+      <ul class="silo-list">
+        {siloLinks.parentHub ? (
+          <li>
+            <strong>Servicio Principal:</strong> <a href={siloLinks.parentHub.url}>{siloLinks.parentHub.text}</a>
+          </li>
+        ) : null}
+        {siloLinks.laterals ? siloLinks.laterals.map((lat) => (
+          <li>
+            <a href={lat.url}>{lat.text}</a>
+          </li>
+        )) : null}
+        {siloLinks.home ? (
+          <li>
+            <a href={siloLinks.home.url}>Volver al Inicio</a>
+          </li>
+        ) : null}
+      </ul>
+    </div>
+  ) : null}
+</nav>
+
+<style>
+  .silo-links-wrapper {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+
+  .silo-group h3 {
+    color: #ffffff;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+
+  .silo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .silo-list li a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .silo-list li a:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+  }
+</style>

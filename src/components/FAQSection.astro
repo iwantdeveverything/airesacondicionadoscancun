@@ -1,0 +1,175 @@
+---
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  faqs?: FAQItem[];
+  title?: string;
+}
+
+const {
+  faqs = [
+    {
+      question: "¿Cada cuántos meses se debe dar mantenimiento a un minisplit en Cancún?",
+      answer: "Debido a la extrema humedad y brisa salina de Cancún, el mantenimiento preventivo profundo con hidrolavadora debe realizarse cada 3 a 4 meses en zonas costeras (Zona Hotelera, Puerto Cancún e Isla Mujeres) y máximo cada 6 meses en zonas urbanas (Av. Huayacán, Polígono Sur, Centro)."
+    },
+    {
+      question: "¿Por qué el aire acondicionado tira agua por dentro en la habitación?",
+      answer: "El goteo interior ocurre por dos causas principales: 1) Obstrucción de la manguera de drenaje por acumulación de moho y limo, o 2) Congelamiento del serpentín evaporador por falta de refrigerante o turbina sucia. Un mantenimiento profesional destapa el drenaje y desinfecta la charola."
+    },
+    {
+      question: "¿Cuánto cuesta recargar gas R410A o R32 en Cancún?",
+      answer: "La recarga de gas R410A o R32 oscila entre $1,200 y $2,800 MXN. Incluye presurización con nitrógeno a 300 PSI para localizar la fuga en tuercas o soldaduras de cobre, reparación física y vacío previo a 500 micrones antes de inyectar refrigerante por peso exacto."
+    },
+    {
+      question: "¿Cómo proteger la tarjeta Inverter contra altibajos de luz de CFE y el salitre?",
+      answer: "Instalamos protectores térmicos de voltaje dedicados al equipo y aplicamos un baño de barniz aislante tropicalizado (Blue Fin / Gold Fin) en los componentes electrónicos para aislar la tarjeta contra cortocircuitos causados por la humedad salina costera."
+    },
+    {
+      question: "¿Ofrecen servicio de emergencia 24/7 y garantía por escrito?",
+      answer: "Sí, contamos con unidades móviles de guardia 24 horas al día en Cancún con tiempo de respuesta menor a 90 minutos. Todas nuestras reparaciones e instalaciones incluyen póliza física de garantía por escrito de 90 a 365 días."
+    }
+  ],
+  title = "Preguntas Frecuentes y Respuestas Directas (FAQ)"
+} = Astro.props;
+---
+
+<section class="faq-container" id="preguntas-frecuentes">
+  <div class="faq-header">
+    <div class="faq-badge">
+      <span class="pulse-icon">💡</span> Respuestas Técnicas Verificadas
+    </div>
+    <h2>{title}</h2>
+    <p>Respuestas claras y transparentes sobre climatización, costos y garantías en Cancún.</p>
+  </div>
+
+  <div class="faq-list">
+    {faqs.map((faq, index) => (
+      <details class="faq-item" open={index === 0}>
+        <summary class="faq-question">
+          <span class="faq-q-text">{faq.question}</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-answer">
+          <p>{faq.answer}</p>
+        </div>
+      </details>
+    ))}
+  </div>
+</section>
+
+<style>
+  .faq-container {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 2px solid #e2e8f0;
+  }
+
+  .faq-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .faq-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 0.75rem;
+    border: 1px solid #bae6fd;
+    font-family: var(--font-heading, sans-serif);
+  }
+
+  .pulse-icon {
+    font-size: 1rem;
+  }
+
+  .faq-header h2 {
+    font-size: 1.85rem;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-header p {
+    color: #64748b;
+    font-size: 1rem;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .faq-item {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  }
+
+  .faq-item[open] {
+    border-color: #0284c7;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.12);
+  }
+
+  .faq-question {
+    padding: 1.25rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #0f172a;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    user-select: none;
+    font-family: var(--font-heading, sans-serif);
+  }
+
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-q-text {
+    flex: 1;
+    padding-right: 1rem;
+    line-height: 1.4;
+  }
+
+  .faq-icon {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #0284c7;
+    transition: transform 0.25s ease;
+    line-height: 1;
+  }
+
+  .faq-item[open] .faq-icon {
+    transform: rotate(45deg);
+    color: #ef4444;
+  }
+
+  .faq-answer {
+    padding: 0 1.5rem 1.25rem 1.5rem;
+    color: #334155;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-top: 1px solid #f1f5f9;
+    background: #f8fafc;
+  }
+
+  .faq-answer p {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+  }
+</style>

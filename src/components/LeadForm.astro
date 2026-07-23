@@ -1,0 +1,132 @@
+---
+---
+
+<div class="lead-card">
+  <div class="lead-header">
+    <h3>Solicita Tu Cotización Inmediata</h3>
+    <p>Atención prioritaria en Cancún y alrededores</p>
+  </div>
+  
+  <form class="lead-form" id="service-lead-form">
+    <div class="form-group">
+      <label for="name">Nombre Completo</label>
+      <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Teléfono / WhatsApp</label>
+      <input type="tel" id="phone" name="phone" placeholder="Ej. 998 123 4567" required />
+    </div>
+
+    <div class="form-group">
+      <label for="service">Servicio Requerido</label>
+      <select id="service" name="service" required>
+        <option value="reparacion">Reparación Urgente</option>
+        <option value="mantenimiento">Mantenimiento Preventivo</option>
+        <option value="instalacion">Instalación de Minisplit</option>
+        <option value="carga-de-gas">Carga de Gas Refrigerante</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="location">Ubicación en Cancún</label>
+      <input type="text" id="location" name="location" placeholder="Ej. Zona Hotelera / SM 15" required />
+    </div>
+
+    <button type="submit" class="btn-submit">
+      🚀 Enviar Solicitud por WhatsApp
+    </button>
+  </form>
+</div>
+
+<script>
+  const form = document.getElementById('service-lead-form') as HTMLFormElement | null;
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const name = formData.get('name');
+      const phone = formData.get('phone');
+      const service = formData.get('service');
+      const location = formData.get('location');
+
+      const message = `Hola, solicito cotización:\n- Nombre: ${name}\n- Teléfono: ${phone}\n- Servicio: ${service}\n- Ubicación: ${location}`;
+      const encodedMsg = encodeURIComponent(message);
+      window.open(`https://wa.me/529981234567?text=${encodedMsg}`, '_blank');
+    });
+  }
+</script>
+
+<style>
+  .lead-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+    border: 1px solid #e2e8f0;
+  }
+
+  .lead-header h3 {
+    font-size: 1.25rem;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+  }
+
+  .lead-header p {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-bottom: 1.25rem;
+  }
+
+  .lead-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .form-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #334155;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 0.65rem 0.85rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #0284c7;
+  }
+
+  .btn-submit {
+    background: linear-gradient(135deg, #0284c7, #0369a1);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .btn-submit:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+  }
+</style>
