@@ -13,8 +13,8 @@ service: "contacto"
 
 ### Información de Contacto Directo
 
-- **Teléfono de Urgencias 24/7:** [+52 998 123 4567](tel:+529981234567)
-- **WhatsApp Inmediato:** [Enviar Mensaje por WhatsApp](https://wa.me/529981234567?text=Hola,%20requiero%20asistencia%20técnica%20urgente%20para%20mi%20aire%20acondicionado)
+- **Teléfono de Urgencias 24/7:** [+52 998 493 4110](tel:+529984934110)
+- **WhatsApp Inmediato:** [Enviar Mensaje por WhatsApp](https://wa.me/529984934110?text=Hola,%20requiero%20asistencia%20técnica%20urgente%20para%20mi%20aire%20acondicionado)
 - **Oficina Central:** Av. Tulum SM 20, Centro, 77500 Cancún, Q.R., México
 - **Horario de Operación:** 
   - Atención Presencial en Taller: Lunes a Sábado de 08:00 a 19:00 hrs.

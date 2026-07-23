@@ -1,61 +1,75 @@
-# Guía de Alineación de Google Business Profile (GBP) & NAP
+# Guía de Alineación para Google Business Profile (GBP) — Aires Acondicionados Cancún
 
-Esta guía establece la alineación 100% consistente entre el micrositio **Aires Acondicionados Cancún** y la ficha de **Google Business Profile (GBP)** para maximizar la autoridad local, el posicionamiento en el Map Pack y las señales E-E-A-T.
+> **Documento de Alineación NAP & Categorías Local Business**  
+> **Proyecto**: Micrositio Local SEO Cancún  
+> **Fecha**: 23 de Julio, 2026  
 
 ---
 
-## 1. Categorías Primarias y Secundarias de GBP
+## 1. Categorías Principales y Secundarias de GBP
 
-- **Categoría Primaria**: `Servicio de reparación de aire acondicionado` (HVAC Contractor / Air Conditioning Repair Service).
+Para maximizar el posicionamiento en el **Google Map Pack (Local Pack)** en Cancún y la Riviera Maya, se deben configurar exactamente las siguientes categorías en la ficha de Google Business Profile:
+
+- **Categoría Principal**:
+  - `Servicio de reparación de aire acondicionado` (*Air Conditioning Repair Service*)
 - **Categorías Secundarias**:
-  - `Servicio de mantenimiento de aire acondicionado`
-  - `Contratista de aire acondicionado`
-  - `Servicio de reparación de electrodomésticos`
+  - `Contratista de aire acondicionado` (*Air Conditioning Contractor*)
+  - `Servicio de limpieza de sistemas de aire acondicionado` (*Air Conditioning Cleaning Service*)
+  - `Servicio de reparación de electrodomésticos` (*Appliance Repair Service*)
 
 ---
 
-## 2. Cobertura Geográfica & Áreas de Servicio (Service Area)
+## 2. Cobertura Geográfica y Áreas de Servicio (Service Areas)
 
-Configurar en el panel de GBP las siguientes zonas y municipios de Quintana Roo derivados de las páginas Spoke del micrositio:
+Dado que es un negocio de servicio local (SAB) con atención a domicilio y de urgencia 24/7, configure las siguientes zonas y códigos postales en la sección **Área de servicio** del panel de GBP:
 
-1. **Benito Juárez (Cancún)**:
-   - Zona Hotelera (Km 1 a Km 20)
-   - Puerto Cancún & Marina
-   - Centro de Cancún (Supermanzanas SM 1 a SM 30)
-   - Avenida Huayacán & Desarrollos Residenciales
-   - Polígono Sur & Jardines del Sur
-   - Alfredo V. Bonfil
-   - Cumbres, Aqua, Arbolada & Astoria
-   - Puerto Juárez & Punta Sam
-2. **Isla Mujeres**:
-   - Zona Urbana e Insular de Isla Mujeres
-3. **Puerto Morelos & Riviera Maya**:
-   - Puerto Morelos y corredor turístico aledaño
+### Municipios y Zonas Clave
+1. **Cancún (Benito Juárez, Quintana Roo)**
+2. **Zona Hotelera Cancún (CP 77500)**
+3. **Puerto Cancún**
+4. **Isla Mujeres (CP 77400)**
+5. **Puerto Morelos (CP 77580)**
+6. **Puerto Juárez**
+7. **Alfredo V. Bonfil**
 
----
-
-## 3. Descripción de Negocio (E-E-A-T Copy de 750 Caracteres)
-
-> **Aires Acondicionados Cancún** es el servicio técnico especializado líder en reparación, mantenimiento preventivo e instalación de sistemas de climatización minisplit e Inverter en Cancún y la Riviera Maya. Contamos con técnicos certificados, atención de urgencias 24/7 y garantía por escrito de 90 a 365 días en todas nuestras intervenciones. Expertos en diagnosticar y solucionar fallas causadas por el salitre costero, corrosión marina y fluctuaciones de voltaje de CFE. Realizamos recargas de gas R410A/R32 con presurización de nitrógeno a 300 PSI y vacío a 500 micrones, así como lavados profundos con hidrolavadora y lona protectora. Cobertura inmediata en Zona Hotelera, Puerto Cancún, Huayacán, Polígono Sur y Centro. ¡Llama o envía WhatsApp 24/7!
+### Colonias y Fraccionamientos de Alto Intent (Spokes)
+- Av. Huayacán
+- Polígono Sur
+- Residencial Cumbres / Residencial Palmaris
+- SM 1 a SM 30 (Centro Cancún)
 
 ---
 
-## 4. Lista de Servicios para GBP Dashboard
+## 3. Descripción Comercial E-E-A-T (750 Caracteres)
 
-| Servicio | Descripción para GBP | Rango de Precio Sugerido |
-| --- | --- | --- |
-| **Mantenimiento Preventivo Profundo** | Lavado a alta presión con hidrolavadora, desmontaje de carcasa, lona protectora, desinfección de turbina y serpentín con líquido anticorrosivo. | $990 - $1,400 MXN |
-| **Recarga de Gas Refrigerante (R410A / R32)** | Detección de fugas en tuercas flare/soldadura de cobre con nitrógeno a 300 PSI, vacío previo a 500 micrones e inyección de gas por peso. | $1,200 - $2,800 MXN |
-| **Reparación de Tarjetas Inverter** | Diagnóstico electrónico de módulos IPM, sensores de temperatura y sustitución de capacitores dañados por variaciones de voltaje. | Cotización en sitio |
-| **Instalación de Minisplit** | Montaje con nivelación láser, tubería de cobre de alta pureza, cableado de uso rudo y base con recubrimiento anti-salitre. | Desde $1,500 MXN |
+Copie y pegue la siguiente descripción optimizada para conversión y SEO local en el campo **Descripción de la empresa** de GBP:
+
+```text
+Servicio técnico profesional de aire acondicionado en Cancún y Riviera Maya 24 horas al día, 7 días a la semana. Especialistas en reparación urgente, mantenimiento preventivo con hidrolavadora profunda, detección de fugas y cargas de gas refrigerante R410A y R32 en equipos Minisplit e Inverter. Atendemos residencias, condominios y comercios en Zona Hotelera, Puerto Cancún, Av. Huayacán, Polígono Sur, Cumbres e Isla Mujeres. Brindamos protección anticorrosiva Blue Fin contra la brisa salina y reparación de tarjetas electrónicas dañadas por variaciones de voltaje de CFE. Tiempo de respuesta menor a 90 minutos con garantía por escrito de 90 a 365 días. ¡Cotiza tu servicio hoy por WhatsApp!
+```
+
+---
+
+## 4. Lista Estructurada de Servicios para GBP
+
+Añada los siguientes elementos en la sección **Servicios** dentro de su panel de Google Business Profile:
+
+| Nombre del Servicio | Rango de Precio (MXN) | Descripción Corta para GBP |
+| :--- | :--- | :--- |
+| **Mantenimiento Preventivo Profundo** | $990 – $1,400 MXN | Limpieza química con hidrolavadora a presión, serpentines, desinfección de charola de condensados y revisión de presiones. |
+| **Reparación Electromecánica 24/7** | $1,200 – $2,800 MXN | Diagnóstico y reparación de compresores, capacitores, motores de turbina y tarjetas electrónicas Inverter. |
+| **Carga de Gas Refrigerante + Vacío** | $1,200 – $2,800 MXN | Presurización con nitrógeno a 300 PSI para ubicar fugas, soldadura en cobre, vacío a 500 micrones y recarga R410A/R32. |
+| **Instalación Básica Minisplit** | $1,500 – $2,800 MXN | Montaje de evaporador y condensador, tubería de cobre aislado, cable de señal, vacío certificado y prueba de arranque. |
 
 ---
 
 ## 5. Lista de Verificación de Consistencia NAP (Name, Address, Phone)
 
-- **Nombre de Negocio (Name)**: `Aires Acondicionados Cancún`
-- **Dirección (Address)**: `Av. Tulum SM 20, 77500 Cancún, Q.R., México`
-- **Coordenadas Geo**: `21.1619, -86.8515`
-- **Teléfono / WhatsApp (Phone)**: `+52 998 123 4567`
-- **URL del Sitio Web**: `https://airesacondicionadoscancun.com`
-- **Marcado JSON-LD en Sitio**: Coincidencia exacta verificada en [src/layouts/Layout.astro](file:///home/hstrejoluna/Projects/airesacondicionadoscancun/src/layouts/Layout.astro) (`HVACBusiness`).
+Asegúrese de que los datos de la ficha de Google coincidan al 100% con los metadatos inyectados en el esquema `HVACBusiness` del sitio web:
+
+- [x] **Nombre comercial (Name)**: `Aires Acondicionados Cancún`
+- [x] **Teléfono (Phone)**: `+52 998 493 4110` (Formato internacional)
+- [x] **Dirección física (Address)**: `Av. Tulum SM 20, Cancún, Quintana Roo, C.P. 77500, México`
+- [x] **Coordenadas GPS**: `Latitud 21.1619, Longitud -86.8515`
+- [x] **Sitio Web (Website URL)**: `https://airesacondicionadoscancun.vercel.app/`
+- [x] **Horario de atención**: `Lunes a Domingo — 24 Horas (00:00 - 23:59)`
