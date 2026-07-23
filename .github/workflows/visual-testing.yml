@@ -5,6 +5,13 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  # Run manually to regenerate baselines (e.g. after intentional UI changes)
+  workflow_dispatch:
+    inputs:
+      update_snapshots:
+        description: 'Regenerate visual baselines and commit them back'
+        type: boolean
+        default: false
 
 jobs:
   visual-tests:
@@ -15,6 +22,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Need full history + write access to commit updated baselines
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -32,9 +42,26 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium webkit
 
+      # ── Normal mode: compare against committed baselines ──────────────────
       - name: Run visual tests
+        if: ${{ !inputs.update_snapshots }}
         run: pnpm run test:visual
 
+      # ── Update mode: regenerate all baselines and commit back ─────────────
+      - name: Update visual baselines
+        if: ${{ inputs.update_snapshots }}
+        run: pnpm run test:visual:update
+
+      - name: Commit updated baselines
+        if: ${{ inputs.update_snapshots }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tests/visual.spec.ts-snapshots/
+          git diff --cached --quiet || git commit -m "test(visual): update Playwright baselines [skip ci]"
+          git push
+
+      # ── Always: upload diffs on failure for inspection ────────────────────
       - name: Upload visual diffs on failure
         if: failure()
         uses: actions/upload-artifact@v4
