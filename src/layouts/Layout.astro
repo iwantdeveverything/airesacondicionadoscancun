@@ -100,6 +100,22 @@ const breadcrumbSchema = {
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Google Consent Mode v2 -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      // Initialize default consent states based on saved user preference
+      const savedConsent = typeof localStorage !== 'undefined' && localStorage.getItem('cookies_accepted') === 'true';
+      gtag('consent', 'default', {
+        'analytics_storage': savedConsent ? 'granted' : 'denied',
+        'ad_storage': savedConsent ? 'granted' : 'denied',
+        'ad_user_data': savedConsent ? 'granted' : 'denied',
+        'ad_personalization': savedConsent ? 'granted' : 'denied',
+        'wait_for_update': 500
+      });
+    </script>
+
     <!-- Google Tag Manager -->
     <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
