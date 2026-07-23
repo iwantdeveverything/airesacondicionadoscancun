@@ -47,19 +47,20 @@ jobs:
         if: ${{ !inputs.update_snapshots }}
         run: pnpm run test:visual
 
-      # ── Update mode: regenerate all baselines and commit back ─────────────
+      # ── Update mode: regenerate all baselines and upload as artifact ────────
       - name: Update visual baselines
         if: ${{ inputs.update_snapshots }}
-        run: pnpm run test:visual:update
+        run: pnpm run test:visual:update || true
+        # "|| true" because --update-snapshots exits with code 1 on first run
+        # when snapshots don't exist yet (it writes them but still reports failure)
 
-      - name: Commit updated baselines
+      - name: Upload updated baselines as artifact
         if: ${{ inputs.update_snapshots }}
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add tests/visual.spec.ts-snapshots/
-          git diff --cached --quiet || git commit -m "test(visual): update Playwright baselines [skip ci]"
-          git push
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-baselines
+          path: tests/visual.spec.ts-snapshots/
+          retention-days: 7
 
       # ── Always: upload diffs on failure for inspection ────────────────────
       - name: Upload visual diffs on failure
