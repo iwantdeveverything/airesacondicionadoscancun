@@ -10,7 +10,10 @@
     "astro": "astro",
     "check": "astro check",
     "typecheck": "astro check",
-    "test": "node --experimental-strip-types --test src/utils/*.test.ts"
+    "test": "node --experimental-strip-types --test src/utils/*.test.ts",
+    "test:visual": "playwright test",
+    "test:visual:update": "playwright test --update-snapshots",
+    "test:visual:ui": "playwright test --ui"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
@@ -19,6 +22,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
+    "@playwright/test": "^1.61.1",
     "@types/node": "^22.0.0",
     "typescript": "^5.7.0"
   }
