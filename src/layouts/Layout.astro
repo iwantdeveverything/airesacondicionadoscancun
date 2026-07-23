@@ -179,6 +179,10 @@ const breadcrumbSchema = {
         padding: 0;
       }
 
+      html, body {
+        overflow-x: hidden;
+      }
+
       body {
         font-family: var(--font-body);
         background-color: var(--color-bg-light);
@@ -279,6 +283,7 @@ const breadcrumbSchema = {
         gap: 0.5rem;
         box-shadow: 0 4px 14px rgba(22, 163, 74, 0.35);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
+        white-space: nowrap;
       }
 
       .btn-phone:hover {
@@ -333,10 +338,11 @@ const breadcrumbSchema = {
 
       .hero h1 {
         color: #ffffff;
-        font-size: clamp(2rem, 4vw, 2.75rem);
+        font-size: clamp(1.4rem, 4.5vw, 2.75rem);
         letter-spacing: -0.02em;
         margin-bottom: 1.25rem;
-        line-height: 1.2;
+        line-height: 1.25;
+        word-break: break-word;
       }
 
       .hero p {
@@ -477,12 +483,103 @@ const breadcrumbSchema = {
         gap: 0.6rem;
         box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
         transition: transform 0.25s ease, box-shadow 0.25s ease;
+        white-space: nowrap;
       }
 
       .float-btn:hover {
         transform: scale(1.05);
         color: #ffffff;
         box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+      }
+
+      /* Responsive Adjustments (< 640px) */
+      @media (max-width: 640px) {
+        .header-container {
+          padding: 0.75rem 1rem;
+        }
+
+        .logo-text {
+          font-size: 1.05rem;
+        }
+
+        .logo-sub {
+          display: none;
+        }
+
+        .logo-icon {
+          font-size: 1rem;
+          padding: 0.35rem 0.65rem;
+        }
+
+        .btn-phone {
+          padding: 0.45rem 0.9rem;
+          font-size: 0.825rem;
+        }
+
+        .hero {
+          padding: 2.5rem 1rem 2rem 1rem;
+        }
+
+        .hero h1 {
+          font-size: 1.45rem;
+          margin-bottom: 0.85rem;
+        }
+
+        .hero p {
+          font-size: 0.975rem;
+          margin-bottom: 1.25rem;
+        }
+
+        .hero-pill {
+          font-size: 0.775rem;
+          padding: 0.3rem 0.75rem;
+          margin-bottom: 0.85rem;
+        }
+
+        .badge-group {
+          gap: 0.5rem;
+        }
+
+        .badge {
+          font-size: 0.775rem;
+          padding: 0.35rem 0.75rem;
+        }
+
+        .main-layout {
+          margin: 1.25rem auto;
+          padding: 0 0.85rem;
+          gap: 1.5rem;
+        }
+
+        .content-card {
+          padding: 1.5rem 1.15rem;
+          border-radius: 12px;
+        }
+
+        .content-card h2 {
+          font-size: 1.35rem;
+          margin-top: 1.5rem;
+        }
+
+        .content-card h3 {
+          font-size: 1.15rem;
+          margin-top: 1.25rem;
+        }
+
+        .content-card p,
+        .content-card li {
+          font-size: 0.95rem;
+        }
+
+        .floating-widget {
+          bottom: 1rem;
+          right: 1rem;
+        }
+
+        .float-btn {
+          padding: 0.65rem 1.1rem;
+          font-size: 0.85rem;
+        }
       }
 
       /* Footer */
