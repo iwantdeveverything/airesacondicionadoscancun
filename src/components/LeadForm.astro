@@ -10,12 +10,12 @@
   <form class="lead-form" id="service-lead-form">
     <div class="form-group">
       <label for="name">Nombre Completo</label>
-      <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required />
+      <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required autocomplete="name" />
     </div>
 
     <div class="form-group">
       <label for="phone">Teléfono / WhatsApp</label>
-      <input type="tel" id="phone" name="phone" placeholder="Ej. 998 493 4110" required />
+      <input type="tel" id="phone" name="phone" placeholder="Ej. 998 493 4110" required inputmode="tel" autocomplete="tel" />
     </div>
 
     <div class="form-group">
@@ -30,7 +30,7 @@
 
     <div class="form-group">
       <label for="location">Ubicación en Cancún</label>
-      <input type="text" id="location" name="location" placeholder="Ej. Zona Hotelera / SM 15" required />
+      <input type="text" id="location" name="location" placeholder="Ej. Zona Hotelera / SM 15" required autocomplete="street-address" />
     </div>
 
     <button type="submit" class="btn-submit">
@@ -61,9 +61,15 @@
   .lead-card {
     background: #ffffff;
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 1.25rem;
     box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
     border: 1px solid #e2e8f0;
+  }
+
+  @media (min-width: 640px) {
+    .lead-card {
+      padding: 1.5rem;
+    }
   }
 
   .lead-header h3 {
@@ -98,11 +104,12 @@
 
   .form-group input,
   .form-group select {
-    padding: 0.65rem 0.85rem;
+    padding: 0.75rem 0.85rem;
+    min-height: 48px;
     border: 1px solid #cbd5e1;
     border-radius: 8px;
     font-family: inherit;
-    font-size: 0.95rem;
+    font-size: 1rem; /* 16px prevents iOS browser auto-zoom */
     transition: border-color 0.2s ease;
   }
 
@@ -118,6 +125,10 @@
     font-weight: 700;
     font-size: 1rem;
     padding: 0.85rem;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 8px;
     cursor: pointer;

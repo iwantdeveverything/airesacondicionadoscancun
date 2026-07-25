@@ -22,4 +22,8 @@ pnpm-debug.log*
 
 # Playwright output (diffs and reports are ephemeral; baselines are committed)
 test-results/
+.test-results/
 playwright-report/
+.vite-cache/
+*.bak
+

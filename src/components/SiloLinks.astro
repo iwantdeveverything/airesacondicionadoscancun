@@ -66,7 +66,13 @@ const siloLinks = getSiloLinks(currentPage, allPages);
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 1.25rem 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .silo-links-wrapper {
+      padding: 1.5rem;
+    }
   }
 
   .silo-group h3 {
@@ -80,14 +86,25 @@ const siloLinks = getSiloLinks(currentPage, allPages);
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 0.75rem;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  @media (min-width: 480px) {
+    .silo-list {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
   }
 
   .silo-list li a {
     color: #38bdf8;
     text-decoration: none;
     font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.25rem 0;
   }
 
   .silo-list li a:hover {
