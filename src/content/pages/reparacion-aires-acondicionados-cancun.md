@@ -37,7 +37,7 @@ Cuando su aire acondicionado falla en el clima tropical de Cancún, la temperatu
 ## GEO/AEO Direct Answers
 
 ### ¿Cuánto cuesta reparar un aire acondicionado que no enfría en Cancún?
-**Respuesta directa:** El precio promedio de reparación en Cancún oscila entre **$850 MXN y $2,800 MXN**, dependiendo de si el problema es un capacitor de arranque quemado, una fuga de gas refrigerante o una falla en la tarjeta Inverter. La visita de diagnóstico ($450-$650 MXN) se bonifica íntegramente al aceptar el trabajo.
+**Respuesta directa:** El precio promedio de reparación en Cancún oscila entre **$850 MXN y $2,800 MXN**. El costo varía según la falla, como capacitores quemados, fugas de gas o tarjetas Inverter dañadas. El diagnóstico ($450-$650 MXN) se bonifica al autorizar la reparación.
 
 ### ¿Qué marcas de aire acondicionado reparan en Cancún?
 **Respuesta directa:** Reparamos todas las marcas comerciales del mercado mexicano, incluyendo **Mirage (Absolut X, Xife, V32), York, Carrier, Daikin, Trane, LG, Samsung, Prime, Magnum y Lennox**, con refacciones originales y técnicos certificados Inverter.

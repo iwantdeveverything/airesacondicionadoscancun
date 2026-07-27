@@ -3,6 +3,11 @@ import SiloLinks from '../components/SiloLinks.astro';
 import LeadForm from '../components/LeadForm.astro';
 import CookieBanner from '../components/CookieBanner.astro';
 import type { SiloPageEntry } from '../utils/siloLinking';
+import {
+  buildLocalBusinessSchema,
+  buildBreadcrumbSchema,
+  buildServiceSchema,
+} from '../utils/schemaBuilder';
 
 interface Props {
   title: string;
@@ -12,6 +17,8 @@ interface Props {
   allPages: SiloPageEntry[];
   landmarks?: string[];
   neighborhoodContext?: string;
+  image?: string;
+  imageAlt?: string;
 }
 
 const {
@@ -22,79 +29,24 @@ const {
   allPages,
   landmarks = [],
   neighborhoodContext,
+  image,
+  imageAlt,
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://airesacondicionadoscancun.vercel.app');
+const siteOrigin = Astro.site?.origin || 'https://airesacondicionadoscancun.vercel.app';
+const canonicalURL = new URL(Astro.url.pathname, siteOrigin);
 
-// Schema.org LocalBusiness JSON-LD
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "HVACBusiness",
-  "name": "Aires Acondicionados Cancún",
-  "image": "https://airesacondicionadoscancun.vercel.app/og-image.jpg",
-  "@id": "https://airesacondicionadoscancun.vercel.app/#organization",
-  "url": "https://airesacondicionadoscancun.vercel.app",
-  "telephone": "+529984934110",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Av. Tulum SM 20",
-    "addressLocality": "Cancún",
-    "addressRegion": "Quintana Roo",
-    "postalCode": "77500",
-    "addressCountry": "MX"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 21.1619,
-    "longitude": -86.8515
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-    ],
-    "opens": "00:00",
-    "closes": "23:59"
-  },
-  "areaServed": [
-    "Cancún",
-    "Zona Hotelera Cancún",
-    "Puerto Cancún",
-    "Isla Mujeres",
-    "Riviera Maya"
-  ],
-  "sameAs": [
-    "https://facebook.com/airesacondicionadoscancun",
-    "https://instagram.com/airesacondicionadoscancun"
-  ]
-};
+const ogImageUrl = image
+  ? (image.startsWith('http://') || image.startsWith('https://')
+      ? image
+      : new URL(image, siteOrigin).toString())
+  : `${siteOrigin}/og-image.jpg`;
 
-// Schema.org BreadcrumbList
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Inicio",
-      "item": "https://airesacondicionadoscancun.vercel.app/"
-    },
-    ...(currentPage.id !== 'index' ? [{
-      "@type": "ListItem",
-      "position": 2,
-      "name": h1,
-      "item": canonicalURL.toString()
-    }] : [])
-  ]
-};
+const ogImageAlt = imageAlt || h1 || title;
+
+const localBusinessSchema = buildLocalBusinessSchema();
+const breadcrumbSchema = buildBreadcrumbSchema(currentPage, h1, canonicalURL.toString());
+const serviceSchema = buildServiceSchema(currentPage, canonicalURL.toString());
 ---
 
 <!DOCTYPE html>
@@ -137,11 +89,17 @@ const breadcrumbSchema = {
     <meta property="og:description" content={description} />
     <meta property="og:locale" content="es_MX" />
     <meta property="og:site_name" content="Aires Acondicionados Cancún" />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={ogImageAlt} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -151,6 +109,9 @@ const breadcrumbSchema = {
     <!-- Structured Data -->
     <script type="application/ld+json" is:inline set:html={JSON.stringify(localBusinessSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+    {serviceSchema && (
+      <script type="application/ld+json" is:inline set:html={JSON.stringify(serviceSchema)} />
+    )}
 
     <style is:global>
       :root {

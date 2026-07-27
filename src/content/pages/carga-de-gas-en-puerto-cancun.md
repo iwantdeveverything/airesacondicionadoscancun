@@ -16,7 +16,7 @@ neighborhoodContext: "Zona residencial de lujo y marina náutica expuesta a bris
 ---
 ## Carga de Gas Refrigerante R410A y R32 en Puerto Cancún
 
-Si su aire acondicionado congeló las tuberías o aventó aire tibio en **Puerto Cancún**, su equipo sufrió una fuga de refrigerante. Nuestro servicio en sitios cercanos a **Marina Puerto Cancún, Plaza Puerto Cancún, Aldea Marina, La Laguna** incluye la presurización con nitrógeno seco, sellado de fuga y recarga exacta de gas R410A o R32 en fase líquida.
+Si su aire acondicionado congeló tuberías o sopla aire tibio en **Puerto Cancún**, presentó una fuga de refrigerante. Atendemos zonas cercanas a **Marina Puerto Cancún, Plaza Puerto Cancún, Aldea Marina y La Laguna**. Incluimos presurización con nitrógeno seco, sellado de fuga y recarga exacta de gas R410A o R32 en fase líquida.
 
 ---
 

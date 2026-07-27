@@ -16,7 +16,7 @@ neighborhoodContext: "Puerto del Caribe con alta demanda de climatización conti
 ---
 ## Mantenimiento Preventivo de Aire Acondicionado en Puerto Morelos
 
-El mantenimiento preventivo periódico es vital en **Puerto Morelos** para evitar fallos catastróficos por acumulación de suciedad y corrosión ambiental. Con la cercanía de sitios emblemáticos como **Faro Inclinado, Parque Nacional Arrecife, Ruta de los Cenotes, Colonia Pescadores**, los condensadores exteriores acumulan salitre y humedad que oxidan las aletas de aluminio si no se aplica un mantenimiento profundo.
+El mantenimiento preventivo periódico es vital en **Puerto Morelos** para evitar fallos por corrosión ambiental. Cerca de **Faro Inclinado, Parque Nacional Arrecife, Ruta de los Cenotes y Colonia Pescadores**, la brisa acumula salitre en condensadores. Un servicio profundo previene la corrosión en aletas de aluminio.
 
 Utilizamos fundas herméticas de lavado para proteger sus paredes y pisos en Puerto Morelos, aplicando químicos desinfectantes y neutros que restauran la eficiencia de su clima.
 

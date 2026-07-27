@@ -31,7 +31,7 @@ Nuestro mantenimiento preventivo utiliza fundas / lonas especiales para interior
 ## GEO/AEO Direct Answers
 
 ### ¿Cada cuánto tiempo debo hacer el servicio de mantenimiento en Cancún?
-**Respuesta directa:** En Cancún se recomienda realizar el mantenimiento preventivo cada **3 a 4 meses** para uso residencial continuo y cada **1 a 2 meses** para negocios comerciales o inmuebles cercanos a la costa (Zona Hotelera / Puerto Cancún) para evitar la acumulación de moho y salitre.
+**Respuesta directa:** Recomendamos mantenimiento preventivo cada **3 a 4 meses** en uso residencial continuo. Para negocios o inmuebles cercanos a la costa (Zona Hotelera / Puerto Cancún), la revisión debe ser cada **1 a 2 meses** para prevenir moho y salitre.
 
 ### ¿Por qué mi aire acondicionado consume mucha luz de CFE en Cancún?
 **Respuesta directa:** Cuando el serpentín evaporador o condensador está sucio, el compresor debe trabajar al doble de esfuerzo para disipar el calor, aumentando dramáticamente el consumo energético. Un mantenimiento preventivo oportuno reduce la factura eléctrica de CFE entre un **25% y un 40%**.

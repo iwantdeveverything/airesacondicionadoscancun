@@ -7,7 +7,7 @@ service: "nosotros"
 ---
 ## Liderazgo y Experiencia en Climatización para el Caribe Mexicano
 
-En **Aires Acondicionados Cancún**, contamos con un equipo técnico con más de 12 años de trayectoria dedicada exclusivamente al diagnóstico, mantenimiento, reparación e instalación de equipos de aire acondicionado en el municipio de Benito Juárez y la Zona Hotelera de Cancún.
+En **Aires Acondicionados Cancún**, sumamos más de 12 años de trayectoria técnica especializada. Brindamos diagnóstico, mantenimiento, reparación e instalación de climatización en Benito Juárez y la Zona Hotelera.
 
 Nuestra filosofía de trabajo se basa en la excelencia técnica, la transparencia en costos y la aplicación rigurosa de normas de refrigeración industrial y comercial.
 

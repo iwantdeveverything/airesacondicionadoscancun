@@ -41,5 +41,5 @@ Nuestros técnicos certificados ofrecen soporte inmediato ante fallas críticas 
 
 - **Tratamiento Anticorrosivo Blue Fin y Gold Fin:** Capa hidrofóbica que protege las aletas de aluminio de los serpentines condensadores contra la brisa marina y la salinidad costera.
 - **Diagnóstico Inverter Avanzado:** Escaneo de códigos de falla en tarjetas lógicas de marcas como Mirage, York, Carrier, LG, Daikin, Trane y Samsung.
-- **Procedimiento de Vacío Certificado:** Empleo de bomba de vacío de dos etapas para alcanzar de 150 a 500 micrones antes de realizar cargas de gas R410A o R32, garantizando la eliminación total de humedad y gases incondensables.
+- **Procedimiento de Vacío Certificado:** Empleo de bomba de vacío de dos etapas para alcanzar de 150 a 500 micrones antes de cargar gas R410A o R32. Esto garantiza la eliminación total de humedad y gases incondensables.
 - **Protección de Voltaje CFE:** Instalación de supresores de picos y protectores térmicos electromecánicos para mitigar daños por apagones o sobretensiones.

@@ -23,7 +23,7 @@ El gas refrigerante en un sistema de aire acondicionado **no se consume ni se ga
 ## GEO/AEO Direct Answers
 
 ### ¿Cuánto cuesta una carga de gas para aire acondicionado en Cancún?
-**Respuesta directa:** La carga completa de gas refrigerante R410A o R32 con reparación de fuga menor y proceso de vacío en Cancún cuesta entre **$1,200 MXN y $2,800 MXN**, dependiendo del tonelaje del equipo (12,000 a 36,000 BTU) y la cantidad de gramos de gas requeridos.
+**Respuesta directa:** La carga completa de refrigerante R410A o R32 con vacío cuesta entre **$1,200 MXN y $2,800 MXN**. El costo depende del tonelaje del equipo (12,000 a 36,000 BTU) y los gramos de gas requeridos.
 
 ### ¿Cómo saber si mi aire acondicionado necesita carga de gas?
-**Respuesta directa:** Los síntomas principales son: 1) El equipo avienta aire a temperatura ambiente pero no enfría, 2) Se forma una capa de hielo / escarcha blanca en la tubería delgada de cobre de la unidad exterior, y 3) Hay goteo de agua inusual en la unidad interior por deshielo imprevisto.
+**Respuesta directa:** Los síntomas principales son tres: 1) El equipo avienta aire ambiente sin enfriar. 2) Se forma escarcha blanca en la tubería de cobre exterior. 3) Presenta goteo inusual en la unidad interior por deshielo.

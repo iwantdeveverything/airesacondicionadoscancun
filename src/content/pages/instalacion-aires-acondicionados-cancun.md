@@ -7,7 +7,7 @@ service: "instalacion"
 ---
 ## Instalación Profesional Certificada de Climas en Cancún
 
-Una instalación deficiente es la causa del 80% de los fallos prematuros en aires acondicionados. En **Aires Acondicionados Cancún**, instalamos equipos minisplit, Inverter y multizona siguiendo los estándares internacionales de refrigeración: medición de nivel milimétrico, aislamiento térmico de alta densidad para evitar condensación exterior y vacío riguroso con bomba de dos etapas.
+Una instalación deficiente causa el 80% de fallos prematuros en clímas. En **Aires Acondicionados Cancún**, instalamos equipos minisplit, Inverter y multizona bajo estándares internacionales. Aplicamos nivelación milimétrica, aislamiento térmico de alta densidad y vacío riguroso con bomba de dos etapas.
 
 ---
 
@@ -27,4 +27,4 @@ Una instalación deficiente es la causa del 80% de los fallos prematuros en aire
 **Respuesta directa:** El costo de mano de obra e insumos estándar para instalar un minisplit de 1 a 1.5 Toneladas en Cancún oscila entre **$1,500 MXN y $2,200 MXN**. Para equipos de 2 a 3 Toneladas o trabajos en alturas (departamentos en pisos elevados), el costo varía entre **$2,200 MXN y $2,800 MXN**.
 
 ### ¿Por qué es obligatorio realizar vacío con bomba al instalar en Cancún?
-**Respuesta directa:** Debido a la extrema humedad de Cancún (hasta 90%), si se deja humedad dentro de la tubería al momento de abrir el refrigerante R410A o R32, esta reacciona químicamente con el aceite sintético POE del compresor, creando **ácido fluorhídrico** que destruye el esmalte del motor y quema el compresor en pocos meses. Exija siempre prueba de vacuómetro.
+**Respuesta directa:** La humedad en Cancún alcanza hasta 90%. Si queda humedad en la tubería al abrir el refrigerante R410A o R32, reacciona con el aceite sintético POE del compresor. Esta mezcla genera **ácido fluorhídrico** que destruye el motor y quema el compresor en pocos meses. Exija siempre prueba de vacuómetro.

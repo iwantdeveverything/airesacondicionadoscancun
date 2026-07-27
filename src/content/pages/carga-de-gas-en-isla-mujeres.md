@@ -16,7 +16,7 @@ neighborhoodContext: "Territorio insular con 100% exposición marina. El salitre
 ---
 ## Carga de Gas Refrigerante R410A y R32 en Isla Mujeres
 
-Si su aire acondicionado congeló las tuberías o aventó aire tibio en **Isla Mujeres**, su equipo sufrió una fuga de refrigerante. Nuestro servicio en sitios cercanos a **Playa Norte, Terminal de Ferries Ultramar, Punta Sur, Avenida Hidalgo** incluye la presurización con nitrógeno seco, sellado de fuga y recarga exacta de gas R410A o R32 en fase líquida.
+Si su aire acondicionado congeló tuberías o sopla aire tibio en **Isla Mujeres**, presentó una fuga de refrigerante. Atendemos zonas cercanas a **Playa Norte, Terminal de Ferries Ultramar, Punta Sur y Avenida Hidalgo**. Realizamos presurización con nitrógeno seco, sellado de fuga y recarga exacta de gas R410A o R32 en fase líquida.
 
 ---
 

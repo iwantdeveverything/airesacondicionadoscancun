@@ -19,7 +19,7 @@ Al contratar los servicios técnicos de **Aires Acondicionados Cancún**, el cli
 - **Reparaciones Electromecánicas y Tarjetas Inverter:** 180 días de garantía en refacciones y mano de obra.
 - **Instalaciones Nuevas:** 365 días de garantía en el trabajo de instalación y hermeticidad de tubería.
 
-*La garantía quedará sin efecto si el equipo es manipulado por personal ajeno a nuestra empresa o si sufre daños por sobretensiones severas de CFE sin protector instalado.*
+*La garantía vence si personal ajeno manipula el equipo. Tampoco aplica por sobretensiones de CFE sin protector instalado.*
 
 ### 3. Formas de Pago
 Aceptamos pagos en efectivo, transferencia electrónica SPEI, y tarjetas de crédito/débito. Los comprobantes o facturas electrónicas (CFDI) se emiten previa solicitud agregando el IVA correspondiente.

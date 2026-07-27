@@ -16,7 +16,7 @@ neighborhoodContext: "Territorio insular con 100% exposición marina. El salitre
 ---
 ## Mantenimiento Preventivo de Aire Acondicionado en Isla Mujeres
 
-El mantenimiento preventivo periódico es vital en **Isla Mujeres** para evitar fallos catastróficos por acumulación de suciedad y corrosión ambiental. Con la cercanía de sitios emblemáticos como **Playa Norte, Terminal de Ferries Ultramar, Punta Sur, Avenida Hidalgo**, los condensadores exteriores acumulan salitre y humedad que oxidan las aletas de aluminio si no se aplica un mantenimiento profundo.
+El mantenimiento preventivo periódico es vital en **Isla Mujeres** para evitar fallos por corrosión ambiental. Cerca de **Playa Norte, Terminal de Ferries Ultramar, Punta Sur y Avenida Hidalgo**, la brisa acumula salitre. Un servicio profundo evita la corrosión en condensadores y serpentines.
 
 Utilizamos fundas herméticas de lavado para proteger sus paredes y pisos en Isla Mujeres, aplicando químicos desinfectantes y neutros que restauran la eficiencia de su clima.
 
